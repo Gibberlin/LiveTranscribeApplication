@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LiveTranscribeApplication</string>
+    <string name="selected_language">Selected Language: %1$s</string>
+    <string name="selected_text">Recognized Speech: %1$s</string>
+    <string name="output_template">Recognized: %1$s</string>
+</resources>
