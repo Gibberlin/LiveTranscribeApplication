@@ -93,8 +93,7 @@ class MainActivity : AppCompatActivity() {
         languageSpinner = findViewById(R.id.language_spinner)
         textView = findViewById(R.id.textView)
         val startButton: Button = findViewById(R.id.startButton)
-
-        // Step 1: Set languages in Spinner
+        
         val languageMap = mapOf(
             "Assamese" to Locale("as", "IN"),
             "Bengali" to Locale("bn", "IN"),
@@ -155,7 +154,6 @@ class MainActivity : AppCompatActivity() {
             override fun onEvent(eventType: Int, params: Bundle?) {}
         })
 
-        // Step 4: Start listening when button clicked
         startButton.setOnClickListener {
             recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
